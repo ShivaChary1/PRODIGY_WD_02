@@ -69,13 +69,13 @@ const Stopwatch = () => {
         <div className="controls">
           {!isRunning ? (
             <>
-            <button className='btn btn-outline-primary' onClick={startStopwatch}>Start</button>
-            <button className='btn btn-outline-danger' onClick={resetStopwatch}>Reset</button>
+            <button className='btn btn-primary' onClick={startStopwatch}>Start</button>
+            <button className='btn btn-danger' onClick={resetStopwatch}>Reset</button>
             </>
           ) : (
             <>
               <button className='btn btn-primary' onClick={pauseStopwatch}>Pause</button>
-              <button className='btn btn-outline-warning' onClick={saveLap}>Lap</button>
+              <button className='btn btn-warning' onClick={saveLap}>Lap</button>
             </>
           )}
         </div>
